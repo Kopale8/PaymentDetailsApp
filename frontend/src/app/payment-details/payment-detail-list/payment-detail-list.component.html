@@ -1,0 +1,10 @@
+<table class="table table-hover">
+    <tr *ngFor="let pd of service.list">
+        <td (click)="populateForm(pd)">{{pd.CardOwnerName}}</td>
+        <td (click)="populateForm(pd)">{{pd.CardNumber}}</td>
+        <td (click)="populateForm(pd)">{{pd.ExpirationData}}</td>
+        <td>
+           <button (click)="onDelete(pd.PMID)" style="border: none"> <i class="fa-solid fa-trash text-danger"></i> </button>
+        </td>
+    </tr>
+</table>
